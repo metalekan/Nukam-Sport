@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
     <title>Nukam Sports</title>
   </head>
   <body>
     <header class="sticky top-0 z-50 glass bg-[#002EBA]">
       <nav
-        class="max-w-screen-xl mx-auto px-5 xl:px-10 py-3 flex justify-between items-center text-white"
+        class="max-w-screen-xl mx-auto px-4 py-3 flex justify-between items-center text-white"
       >
         <div class="flex items-center">
           <img src="images/logo_nukam.png" class="h-10 xl:h-14" />
@@ -47,7 +52,7 @@
           <li>
             <button
               type="button"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-sm px-8 py-2.5 me-2"
             >
               Donate
             </button>
@@ -105,16 +110,98 @@
     </header>
 
     <main>
-      <section class="my-6">
-        <h1 class="text-4xl text-center text-center border-t-2 pt-4 border-[#002EBA]">Our Top <span class="font-bold">Talents</span></h1>
+      <section class="bg-white">
+        <div
+          class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+        >
+          <div class="mr-auto place-self-center lg:col-span-7">
+            <h1
+              class="max-w-2xl mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-4xl text-[#002EBA]"
+            >
+              Nukam Sports
+            </h1>
+            <h1
+              class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
+            >
+              Discover top Talents
+            </h1>
+            <p
+              class="max-w-2xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl"
+            >
+              Empowering Youth Through Sports Discover the transformative power
+              of athletics in shaping young lives
+            </p>
+          </div>
+          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+            <img class="rounded-2xl" src="images/hero.png" alt="mockup" />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="my-6 flex flex-col items-center max-w-screen-xl mx-auto min-h-screen"
+      >
+        <hr
+          class="w-24 xl:w-48 h-1 mx-auto my-4 bg-[#002EBA] border-0 rounded md:my-10"
+        />
+        <h2 class="mb-4 text-2xl md:text-3xl xl:text-4xl tracking-tight font-extrabold text-gray-900">
+          Our Top Talents
+        </h2>
         <div
           id="container"
-          class="p-5 xl:p-10 py-10 grid grid-cols-2 md:grid-cols-4 gap-3 xl:gap-6 max-w-screen-xl mx-auto"
+          class="px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-3 xl:gap-6 w-full"
         ></div>
+        <div class="flex">
+          <!-- Previous Button -->
+          <a
+            href="#"
+            class="flex items-center justify-center px-3 h-8 me-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700"
+          >
+            <svg
+              class="w-3.5 h-3.5 me-2 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 5H1m0 0 4 4M1 5l4-4"
+              />
+            </svg>
+            Previous
+          </a>
+          <a
+            href="#"
+            class="flex items-center justify-center px-3 h-8 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700"
+          >
+            Next
+            <svg
+              class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
       </section>
 
       <section>
-        <div class="max-w-screen-xl mx-auto min-h-screen p-5 xl:p-10 py-10">
+        <div
+          class="max-w-screen-xl mx-auto min-h-screen p-5 xl:p-10 py-20 hidden"
+        >
           <div class="flex items-center gap-4 my-9">
             <img
               class="h-60 w-40 object-cover pbject-center"
@@ -187,6 +274,92 @@
           </div>
         </div>
       </section>
+
+      <section>
+        <div
+          class="flex flex-col gap-10 xl:gap-20 max-w-screen-xl mx-auto px-4 py-10 border"
+        >
+          <div class="grid grid-col-1 xl:grid-cols-2 gap-6">
+            <img src="images/hero.png" alt="player" />
+
+            <div class="flex flex-col justify-center">
+              <h1 class="text-4xl font-semibold mb-4">Micheal Jordan</h1>
+              <h2 class="font-semibold">
+                Role: <span class="font-normal ms-4">Center</span>
+              </h2>
+              <h2 class="font-semibold">
+                Height: <span class="font-normal ms-4">186cm / 6"1</span>
+              </h2>
+
+              <div class="mt-8">
+                <h2 class="font-semibold">Short Bio:</h2>
+                <p>
+                  Born in Kaduna state Nigeria is a seasoned player with over 10
+                  years experience.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-12">
+            <div>
+              <h1
+                class="font-bold border-b border-[#002EBA] border-dotted pb-6"
+              >
+                General Info:
+              </h1>
+
+              <div class="flex flex-col gap-4 py-6">
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold">Born:</span>
+                  <span class="text-[#002EBA]">1991</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold">Nationality:</span>
+                  <span class="text-[#002EBA]">USA</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold">Height:</span>
+                  <span class="text-[#002EBA]">203cm</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold">Weight:</span>
+                  <span class="text-[#002EBA]">98kg</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold">College:</span>
+                  <span class="text-[#002EBA]">Union (NCAA division 2)</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h1
+                class="font-bold border-b border-[#002EBA] border-dotted pb-6"
+              >
+                Scout Video:
+              </h1>
+
+              <div class="aspect-video py-6">
+                <!-- Replace 'VIDEO_ID' with the actual ID of the YouTube video -->
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/TBArvE-1gAk"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="cursor-pointer transition-all bg-[#002EBA] text-white px-12 py-2 rounded-lg border-[#002EBA] border-b-[4px] hover:brightness-110 active:border-b-[2px] active:brightness-90 active:translate-y-[2px] text-sm xl:text-base w-fit self-center"
+          >
+            I'm Intrested
+          </button>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-gray-50">
@@ -252,15 +425,14 @@
               </h2>
               <ul class="text-gray-500 font-medium flex flex-col gap-4 text-sm">
                 <li>
-                  <a href="#" class="hover:underline"
-                    >Demo St, Brooklyn, NY 11223, United States</a
-                  >
+                  <span
+                    >1, Oshitelu str, keke Agege, Agege Stadium</span>
                 </li>
                 <li>
-                  <a href="#" class="hover:underline">+1 123-456-7890</a>
-                </li>
+                  <a href="tel:+2348036937739">+234 80 3693 7739</a>                </li>
                 <li>
-                  <a href="#" class="hover:underline">mail@nukamsports.com</a>
+                  <a href="mailto:mail@nukamsports.com">mail@nukamsports.com</a>
+
                 </li>
               </ul>
             </div>

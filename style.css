@@ -13,19 +13,19 @@ body {
   background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); */
 }
 
-/* .gradient {
-  background: #4e54c8;
-  background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
-  background: linear-gradient(to right, #8f94fb, #4e54c8);
-
+.gradient-text-1 {
+  background: -webkit-linear-gradient(#a79af9, #7aa8d2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.gradient2 {
-  background: #8e9eab;
-  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
-  background: linear-gradient(to right, #eef2f3, #8e9eab);
-
-} */
+.gradient-text-2 {
+  background: -webkit-linear-gradient(tomato, #743f93);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 nav{
   font-family: "Poppins", sans-serif;
